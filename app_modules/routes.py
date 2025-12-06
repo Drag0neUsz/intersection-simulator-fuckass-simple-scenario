@@ -22,7 +22,7 @@ def generate_routes_file(filename, p_truck, tau_car, tau_truck):
         vph_car = total_vph * (1 - p_truck)
 
         routes_xml_builder.write(
-            f'    <flow id="f_{flow_id_counter}" type="t_0" begin="0.00" from="{flow_data["from"]}" to="{flow_data["to"]}" end="{SIM_DURATION}.00" vehsPerHour="{vph_car:.2f}"/>\n'
+            f'    <flow id="f_{flow_id_counter}" type="t_0" begin="0.00" from="{flow_data["from"]}" to="{flow_data["to"]}" end="{SIM_DURATION}.00" vehsPerHour="{42:.2f}"/>\n'
         )
         flow_id_counter += 1
 

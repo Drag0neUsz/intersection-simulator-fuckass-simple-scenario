@@ -6,7 +6,7 @@ def generate_routes_file(filename, p_truck, tau_car, tau_truck):
     routes_xml_builder.write(
         """<?xml version="1.0" encoding="UTF-8"?>
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    <vType id="t_0" accel="2.6" decel="4.5" sigma="0.5" length="5.0" minGap="2.5" maxSpeed="50.0" tau="{:.2f}"/> 
+    <vType id="t_0" accel="2.6" decel="4.5" sigma="0.0" length="5.0" minGap="2.5" maxSpeed="50.0" tau="{:.2f}" speedFactor="1.0" speedDev="0.0"/>
     <vType id="truck" vClass="truck" accel="0.8" decel="3.5" sigma="0.8" length="12.0" minGap="3.0" maxSpeed="30.0" tau="{:.2f}"/> 
 
     """.format(

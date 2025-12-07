@@ -11,12 +11,12 @@ sumo_bin = os.path.join(os.environ["SUMO_HOME"], "bin")
 os.environ["PATH"] = sumo_bin + os.pathsep + os.environ["PATH"]
 
 CONFIG_FILES = {
-    # "Rondo": "rondo/rondo.sumocfg"
+    # "Rondo": "rondo/rondo.sumocfg",
     "Swiatla": "sygnalizacja/sygnalizacja.sumocfg"
 }
 
 
-NUM_SIMULATIONS = 3
+NUM_SIMULATIONS = 1
 SIM_DURATION = 1000
 SUMO_BINARY = "sumo-gui"
 STEP_LENGTH = 0.2
@@ -47,16 +47,16 @@ CSV_HEADERS = [
 
 
 ORIGINAL_FLOWS = {
-    "f_0": {"from": "Zwycieska_EW", "to": "Oltaszynska_NN", "vph": 349.99},
-    "f_1": {"from": "Zwycieska_EW", "to": "Zwycieska_WW.148", "vph": 349.99},
+    # "f_0": {"from": "Zwycieska_EW", "to": "Oltaszynska_NN", "vph": 349.99},
+    # "f_1": {"from": "Zwycieska_EW", "to": "Zwycieska_WW.148", "vph": 349.99},
     "f_10": {"from": "Oltaszynska_SN", "to": "Oltaszynska_NN", "vph": 200.0},
-    "f_11": {"from": "Oltaszynska_SN", "to": "Zwycieska_WW.148", "vph": 700.39},
-    "f_2": {"from": "Zwycieska_EW", "to": "Oltaszynska_SS", "vph": 349.99},
-    "f_3": {"from": "E7", "to": "Oltaszynska_SS", "vph": 300.0},
-    "f_4": {"from": "E7", "to": "-Zwycieska_EW", "vph": 1150.16},
-    "f_5": {"from": "E7", "to": "Oltaszynska_NN", "vph": 250.0},
-    "f_6": {"from": "Oltaszynska_NS", "to": "Zwycieska_WW.148", "vph": 750.0},
-    "f_7": {"from": "Oltaszynska_NS", "to": "Oltaszynska_SS", "vph": 200.0},
-    "f_8": {"from": "Oltaszynska_NS", "to": "-Zwycieska_EW", "vph": 450.0},
-    "f_9": {"from": "Oltaszynska_SN", "to": "-Zwycieska_EW", "vph": 450.0},
+    # "f_11": {"from": "Oltaszynska_SN", "to": "Zwycieska_WW.148", "vph": 700.39},
+    # "f_2": {"from": "Zwycieska_EW", "to": "Oltaszynska_SS", "vph": 349.99},
+    # "f_3": {"from": "E7", "to": "Oltaszynska_SS", "vph": 300.0},
+    # "f_4": {"from": "E7", "to": "-Zwycieska_EW", "vph": 1150.16},
+    # "f_5": {"from": "E7", "to": "Oltaszynska_NN", "vph": 250.0},
+    # "f_6": {"from": "Oltaszynska_NS", "to": "Zwycieska_WW.148", "vph": 750.0},
+    # "f_7": {"from": "Oltaszynska_NS", "to": "Oltaszynska_SS", "vph": 200.0},
+    # "f_8": {"from": "Oltaszynska_NS", "to": "-Zwycieska_EW", "vph": 450.0},
+    # "f_9": {"from": "Oltaszynska_SN", "to": "-Zwycieska_EW", "vph": 450.0},
 }

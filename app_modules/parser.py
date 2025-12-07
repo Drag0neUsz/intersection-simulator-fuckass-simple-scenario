@@ -17,7 +17,8 @@ def parse_summary_output(filename):
         if not summary_steps:
             return 0, 0.0, 0.0, 0, 0.0, 0.0
 
-        fiteen_hundred_step = summary_steps[int(1500 / STEP_LENGTH)]
+        target_index = min(int(1500 / STEP_LENGTH), len(summary_steps) - 1)
+        fiteen_hundred_step = summary_steps[target_index]
         ft_arrived_count = float(fiteen_hundred_step.get("arrived", 0))
         ft_avg_wait_sumo = float(fiteen_hundred_step.get("meanWaitingTime", 0.0))
         ft_total_time = float(fiteen_hundred_step.get("time", 0.0))

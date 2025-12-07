@@ -13,10 +13,14 @@ def run_simulation_external(config_file, routes_file):
         routes_file,
         "--step-length",
         f"{STEP_LENGTH}",
-        "--quit-on-end",
+        # "--quit-on-end",
         "--duration-log.statistics",
         "--default.action-step-length",
         f"{random.uniform(*ACTION_STEP_LENGTH_RANGE)}",
+        "--seed",
+        f"{0}",
+        "--tripinfo-output",
+        "tripinfo_output.xml"
         # f"--end", str(SIM_DURATION)  # Wymuś zakończenie po SIM_DURATION, jeśli pojazdy utkną na długo
     ]
     if SUMO_BINARY != "sumo-gui":

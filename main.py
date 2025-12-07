@@ -65,8 +65,8 @@ if __name__ == "__main__":
                     ]
                 )
 
-            if os.path.exists(routes_filename):
-                os.remove(routes_filename)
+            # if os.path.exists(routes_filename):
+                # os.remove(routes_filename)
 
             t.append(time.time())
             if SUMO_BINARY == "sumo" and (i + 1) % 5 == 0:
@@ -82,6 +82,6 @@ if __name__ == "__main__":
                     print(
                         f"Szacowany czas do końca: {round(((time.time() - t[i-20]) / 20 * (NUM_SIMULATIONS - (i + 1))) / 60, 2)} min"
                     )
-    if os.path.exists(SUMMARY_OUTPUT_FILE):
-        os.remove(SUMMARY_OUTPUT_FILE)
+    # if os.path.exists(SUMMARY_OUTPUT_FILE):
+        # os.remove(SUMMARY_OUTPUT_FILE)
     print(f"\nZakończono symulację. Wyniki zapisane w {OUTPUT_CSV}")
